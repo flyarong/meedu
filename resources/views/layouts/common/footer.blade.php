@@ -208,8 +208,12 @@
             </div>
         </div>
         <div class="form-group auth-box-errors"></div>
-        <div class="form-group mb-0">
+        <div class="form-group">
             <button type="button" class="btn btn-primary btn-block mobile-bind-button">立即绑定</button>
+        </div>
+        <div class="form-group text-center mb-0">
+            <a href="javascript:void(0)" onclick="event.preventDefault();
+                                                             document.getElementById('logout-form').submit();">退出登录</a>
         </div>
     </form>
 </script>
@@ -219,7 +223,7 @@
         <div class="row">
             <div class="col-12 text-center">
                 <p>Powered By <a href="https://meedu.vip" target="_blank">MeEdu</a></p>
-                <p>© {{date('Y')}} {{config('app.name')}} · <a href="http://www.beian.miit.gov.cn"
+                <p>© {{date('Y')}} {{config('app.name')}} · <a href="http://beian.miit.gov.cn"
                                                                target="_blank">{{$gConfig['system']['icp']}}</a></p>
             </div>
         </div>
